@@ -10,6 +10,7 @@ function getCheckCode(id) {
     return checkCodes[total%11]
 }
 
+// 18位身份证号的严格校验，加入地区（精确到省级行政区），加权因子的校验
 function checkId(id) {
     const provinceCodes = [11, 12, 13, 14, 15, 
         21, 22, 23,
