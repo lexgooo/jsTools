@@ -17,9 +17,8 @@
 - 在你的项目的 package.json 文件中的 scripts 中新增：  
 ```json
 "scripts": {
-    ...
-    "publish:dev": "node ./publish.js dev", // 假设你有需要发布到 dev 服务器
-    "publish:prod": "node ./publish.js prod" // 生产环境发布
+    "publish:dev": "node ./publish.js dev", 
+    "publish:prod": "node ./publish.js prod"
   }
 ```  
 - 运行  
@@ -31,4 +30,5 @@ npm run publish:dev
 npm run publish:prod
 ```
 ### TODO
-- [ ]  加入可自定义分支功能，目前只支持发布到 dev 分支 
+- [ ] 加入可自定义分支功能，目前只支持发布到 dev 分支   
+- [ ] 加入可自定义提交的仓库名，目前只支持当前项目名加 "_dist" 这种格式。
