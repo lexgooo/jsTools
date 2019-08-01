@@ -1,0 +1,22 @@
+{
+  "name": "js-tools",
+  "version": "1.0.0",
+  "description": "用来保存一些平时会用到的 js 工具函数文件集合",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexgooo/jsTools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexgooo/jsTools/issues"
+  },
+  "homepage": "https://github.com/lexgooo/jsTools#readme",
+  "devDependencies": {
+    "yarg": "^1.0.8"
+  }
+}

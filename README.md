@@ -1,6 +1,15 @@
 # jsTools
 用来保存一些平时会用到的 js 工具函数文件集合  
 
+- 安装依赖
+```shell
+yarn
+```
+OR
+```shell
+npm install
+```
+
 ## strictIDTest.js  
 
 ![idNum](./images/id.jpg)  
@@ -34,3 +43,12 @@ npm run publish:prod
 ### TODO
 - [ ] 加入可自定义分支功能，目前只支持发布到 dev 分支   
 - [ ] 加入可自定义提交的仓库名，目前只支持当前项目名加 "_dist" 这种格式。
+****
+## vueWriteCode
+还没想好用来做什么，想写一个可以自动添加一些重复量比较大的代码，比如：
+- 自动在每个文件中引入特定的文件
+- 自动根据文件夹内文件添加出一个 `router` 配置文件 
+
+### autoAddDependencies.js
+- 目前的功能是在所有的 vue 文件的 `style` 中添加全局的变量文件。目前支持 `sass`
+- 接收两个参数  `--target`，需要操作的文件夹，'--file'，将要被引入到 `.vue` 文件相应位置的文件路径,不要加上 `--target` 的路径前缀。 
