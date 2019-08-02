@@ -10,6 +10,8 @@ OR
 npm install
 ```
 
+- 如果在项目中使用，单独下载代码，根据情况添加依赖
+
 ## strictIDTest.js  
 
 ![idNum](./images/id.jpg)  
@@ -52,3 +54,11 @@ npm run publish:prod
 ### autoAddDependencies.js
 - 目前的功能是在所有的 vue 文件的 `style` 中添加全局的变量文件。目前支持 `sass`
 - 接收两个参数  `--target`，需要操作的文件夹，'--file'，将要被引入到 `.vue` 文件相应位置的文件路径,不要加上 `--target` 的路径前缀。 
+- 单独下载到项目中时，添加依赖
+```shell
+yarn add yarg -D
+```
+OR  
+```shell
+npm install -D yarg
+```
